@@ -8,7 +8,7 @@ require("dotenv").config();
 const port = process.env.PORT || 5000;
 
 //Serving the build files
-const DIST_DIR = path.join(__dirname, "./client/build");
+const DIST_DIR = path.join(__dirname, "./client/dist");
 app.use(express.static(DIST_DIR));
 
 app.use((req, res, next) => {

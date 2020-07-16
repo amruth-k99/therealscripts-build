@@ -31,9 +31,8 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 
-app.use("/api", routes);
 app.get("/api/aa", (req, res) => {
-  res.json({});
+  res.json({ hi: "Hi" });
 });
 
 app.use((err, req, res, next) => {
